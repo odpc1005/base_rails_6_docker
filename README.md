@@ -1,24 +1,15 @@
 # README
+Check in the .env files the correct name for the database.
+Change the config/application.rb to rename your app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo uses docker compose to setup the required services.
 
-Things you may want to cover:
+Use docker compose up to build the images and spin the containers.
 
-* Ruby version
+Since you are using docker you can use this template in a host that does not have ruby or rails installed.
 
-* System dependencies
+Just remember that you need to get into a container to issue rails commands such as 'rails test' or 'rails generate model Task body:string' etc
 
-* Configuration
+After you clone the repo please make sure to change your origin remote not to pollute this repo.
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
